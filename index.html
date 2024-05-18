@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Gramática LR(0) y SLR(0)</title>
+</body>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: rgb(69, 81, 88);
+  }
+  .container {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  #states {
+      width: 80%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow-x: auto;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Verificador de Gramática LRO o SLRO</h1>
+  <textarea id="grammarInput" rows="10" cols="50" placeholder="Ingrese la gramática aquí..."></textarea><br>
+  <button onclick="analyzeGrammar()">Analizar</button>
+  <p id="result"></p>
+  <div id="automaton"></div>
+</div>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="grammar.js"></script>  
+</html>
+
+
+
